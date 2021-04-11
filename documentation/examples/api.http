@@ -1,0 +1,53 @@
+### Process incorrect url - got error to user
+
+POST http://localhost:6000/processUrl
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "uri": [
+    "http://dfgdgd.com/"
+
+  ]
+}
+
+### Procces correct url
+
+POST http://localhost:6000/processUrl
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "uri": [
+    "https://openexchangerates.org/api/currencies.json"
+  ]
+}
+
+###
+
+POST http://localhost:6000/healthcheck
+Cache-Control: no-cache
+
+{
+"username": "username",
+"password": "password"
+}
+
+    "https://data.fixer.io/api/latest",
+    "https://openexchangerates.org/api/currencies.json",
+    "http://ya.ru",
+    "http://google.com"
+###
+
+POST http://localhost:6000/processUrl
+Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "uri": [
+    "http://ya.ru"
+  ]
+}

@@ -28,26 +28,8 @@ Cache-Control: no-cache
 ###
 
 POST http://localhost:6000/healthcheck
-Cache-Control: no-cache
-
-{
-"username": "username",
-"password": "password"
-}
-
-    "https://data.fixer.io/api/latest",
-    "https://openexchangerates.org/api/currencies.json",
-    "http://ya.ru",
-    "http://google.com"
-###
-
-POST http://localhost:6000/processUrl
 Accept: application/json
-Content-Type: application/json
 Cache-Control: no-cache
 
 {
-  "uri": [
-    "http://ya.ru"
-  ]
 }
